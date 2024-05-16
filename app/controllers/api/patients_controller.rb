@@ -11,6 +11,11 @@ class Api::PatientsController < ApplicationController
     end
   end
 
+  def index
+    @patients = Patient.all
+    render json: @patients
+  end
+
   private
 
   def patient_params

@@ -5,7 +5,7 @@ FROM ruby:3.3.1
 WORKDIR /app
 
 # Instalamos las dependencias del sistema y las gemas necesarias
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y curl default-mysql-client
 
 # Copiamos el Gemfile y el Gemfile.lock y luego instalamos las gemas
 COPY Gemfile Gemfile.lock ./
