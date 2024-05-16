@@ -5,7 +5,6 @@ class NotificationService
   
     def send_confirmation_message
       send_email
-      # Aquí puedes agregar la lógica para enviar SMS en el futuro
     end
   
     private
@@ -14,9 +13,7 @@ class NotificationService
       SendConfirmationEmailJob.perform_later(@patient)
     end
   
-    # Método de ejemplo para enviar SMS en el futuro
     def send_sms
-      # Lógica para enviar SMS
     end
   end
   
