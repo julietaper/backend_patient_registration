@@ -1,13 +1,12 @@
 class Api::PatientsController < ApplicationController
   def create
     @patient = Patient.new(patient_params)
-    if @patient.save
-      # Enqueue a job to send confirmation email asynchronously
-      SendConfirmationEmailJob.perform_later(@patient.id)
 
-      render json: { message: 'Patient registered successfully' }, status: :created
+    if @patient.save
+      NotificationService.new(@patient).send_confirmation_message
+      render json: @patient, status: :created
     else
-      render json: { errors: @patient.errors.full_messages }, status: :unprocessable_entity
+      render json: @patient.errors, status: :unprocessable_entity
     end
   end
 

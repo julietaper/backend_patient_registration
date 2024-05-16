@@ -1,7 +1,6 @@
 class PatientMailer < ApplicationMailer
-    def confirmation_email(patient)
-      @patient = patient
-      mail(to: @patient.email, subject: 'Confirmación de registro')
+    def confirmation_email
+      @patient = params[:patient]
+      mail(to: @patient.email, subject: 'Confirmation Email')
     end
   end
-  
