@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+1. Clone the repository from Github on your computer.
+2. Modify the docker.compose.yml and config/database.yml files with your database data
+3. To run the application you need to have Docker installed on your machine, then run the following command:
 
-* Ruby version
+   - docker-compose up --build
+  
 
-* System dependencies
+4. In postman with the url http://0.0.0.0:3000/api/patients you can create a patient
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  
