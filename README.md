@@ -18,7 +18,8 @@
 ## Evidence 
 
 1. In postman with the url http://0.0.0.0:3000/api/patients you can create a patient. The body should look something like this:
-<img width="811" alt="Screen Shot 2024-05-16 at 20 18 49" src="https://github.com/julietaper/backend_patient_registration/assets/70965839/ebf1836f-738d-465b-9242-3b70678f1651">
+<img width="782" alt="Screen Shot 2024-05-16 at 20 49 41" src="https://github.com/julietaper/backend_patient_registration/assets/70965839/04b060cf-ff29-4a0f-b013-905144f3762b">
+
    
 2. The information of the patient must have the followig validations
 <img width="655" alt="Screen Shot 2024-05-16 at 20 19 36" src="https://github.com/julietaper/backend_patient_registration/assets/70965839/3b614720-24a3-4bd0-84e8-9d704d06a503">
