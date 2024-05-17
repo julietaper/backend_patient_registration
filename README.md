@@ -41,7 +41,8 @@ MYSQL_PASSWORD=
 
 3. If the patient registered successfully, a confirmation email is sent. I use Mailtrap, in the console you can see the email
 
-<img width="800" alt="Screen Shot 2024-05-16 at 20 25 01" src="https://github.com/julietaper/backend_patient_registration/assets/70965839/0bd942c7-2e07-4ee4-be65-be2ffaba9f80">
+<img width="1226" alt="Screen Shot 2024-05-17 at 00 16 06" src="https://github.com/julietaper/backend_patient_registration/assets/70965839/e441c692-8da6-42a0-9182-90d114bd798a">
+
 
 4. In DBeaver you can see the patients already created
 
