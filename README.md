@@ -50,9 +50,3 @@ MYSQL_PASSWORD=
 ## Specifications 
 
 - Taking into account that in the future other types of notifications like SMS will be added. I create a service where the emails are currently located but in the future you could simply add notifications by SMS.
-  
-
-
-
-
-  
