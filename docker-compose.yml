@@ -4,10 +4,10 @@ services:
     image: mysql/mysql-server:latest
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: database_name
-      MYSQL_USER: root
-      MYSQL_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "63946:3306" 
     volumes:
@@ -24,9 +24,9 @@ services:
     depends_on:
       - db
     environment:
-      DB_USER: root
-      DB_NAME: database_name
-      DB_PASSWORD: rootpassword
-      DB_HOST: db:3306
+      DB_USER: ${DB_USER}
+      DB_NAME: ${DB_NAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_HOST: ${DB_HOST}
 volumes:
   db-volume:
