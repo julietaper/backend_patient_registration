@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # README BACKEND PATIENT REGISTRATION
 
 ## Getting Started
@@ -35,10 +33,3 @@
 ## Specifications 
 
 - Taking into account that in the future other types of notifications like SMS will be added. I create a service where the emails are currently located but in the future you could simply add notifications by SMS.
-  
-
-
-
-
-  
->>>>>>> fc7231d2f3fdbe3d7b100b6ecdf58930e8da9e40
